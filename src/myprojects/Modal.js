@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 
-const Modal = ({ myclose, veri }) => {
+const Modal = ({ content, fak }) => {
   useEffect(() => {
     setTimeout(() => {
-      myclose();
+      fak();
     }, 2000);
   });
-  return <div style={{ color: veri.color }}>{veri.title}</div>;
+  return <div style={{ color: content.color }}>{content.content}</div>;
 };
 
 export default Modal;
